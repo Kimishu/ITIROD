@@ -17,8 +17,12 @@ _Created by Ankushev Alexey (053502)_
 - __Sign Up Page__
 ![image](https://user-images.githubusercontent.com/46163424/228965142-2c9541fc-4b4e-473a-86b3-dc52bf933fd7.png)
 
-- __Main Page__
+- __Main Page__ (old)
 ![image](https://user-images.githubusercontent.com/46163424/228961224-431805fe-d65b-4eb3-b179-60025cb4cbee.png)
+
+- __Main Page__ (new)
+![image](https://user-images.githubusercontent.com/46163424/228980438-05a7b6e6-bcc4-40ae-8c5c-02ca60c5cbb0.png)
+
 
 - __Profile Page__
 ![image](https://user-images.githubusercontent.com/46163424/228964713-0721209e-363b-415c-9233-45e3db419759.png)
