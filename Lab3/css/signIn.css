@@ -1,0 +1,11 @@
+body{
+    background-image: url(../imgs/login.jpg);
+}
+
+.container{
+    overflow-x: 735px;
+    overflow-y: 450px;
+    width: 450px;
+    height: 295px;
+    align-items: center;
+}
