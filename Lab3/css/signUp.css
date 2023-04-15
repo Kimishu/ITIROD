@@ -34,7 +34,6 @@ body{
 }
 
 .container input[type=submit]{
-    
     width: 185px;
     height: 45px;
     background-color: rgba(31, 30, 30, 90%);

@@ -1,10 +1,10 @@
 function getNav(){
-    if(document.getElementById("mySidenav").style.width == "0px"){
-        document.getElementById("mySidenav").style.width = "250px";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    if(document.getElementById("side_nav").style.width == "0px"){
+        document.getElementById("side_nav").style.width = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
     }
     else {
-        document.getElementById("mySidenav").style.width = "0px";
+        document.getElementById("side_nav").style.width = "0px";
         document.body.style.backgroundColor = "white";
     }
 }

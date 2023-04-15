@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/profile.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 </head>
-<body style="margin: 0px;">
+<body>
     <header>
-        <ul class="nav-bar">
-            <li onclick="getNav()"><a href="#menu"><img src="../imgs/menu.png" width="30rem" height="30rem"></a></li>
-            <li id="form_element"><a href="signIn.html">SignIn</a></li>
-            <li id="form_element"><a href="signUp.html">SignUp</a></li>
-        </ul>
-        <div id="mySidenav" class="sidenav" style="width: 0px;">
+        <nav class="nav-bar">
+            <ul>
+                <li onclick="getNav()"><a><img src="../imgs/menu.png"></a></li>
+                <li id="form_element"><a href="signIn.html">SignIn</a></li>
+                <li id="form_element"><a href="signUp.html">SignUp</a></li>
+            </ul>
+        </nav>
+        <nav id="side_nav" class="side-nav" style="width: 0px;">
             <a href="index.html">Main</a>
+            <a href="profile.html">Profile</a>
+            <hr>
             <a href="signIn.html">SignIn</a>
             <a href="signUp.html">SignUp</a>
-            <a href="profile.html">Profile</a>
-        </div>
+        </nav>
     </header>
 
+    <main>
+        <div class="tab__wrapper">
+            <div class="tab">
+                <button class="tablinks" onclick="openContent(event,'Profile')">Profile</button>
+                <button class="tablinks" onclick="openContent(event,'Projects')">Projects</button>
+                <button class="tablinks" onclick="openContent(event,'Settings')">Settings</button>
+                <button class="tablinks" onclick="location.href='signIn.html'">Logout</button>
+            </div>
+            <div class="tabcontent__wrapper">
+                <div id="Profile" class="tabcontent">
+                    <h2>Profile</h2>
+                    <hr>
+                    <div class="avatar__wrapper">
+                        <div class="avatar">
+                        </div>
+                        <input class="inputfile" type="file" name="pic" accept="image/*">
+                    </div>
+                    <p>Username - Papich</p>
+                    <p>Registration date - 13.04.2023</p>
+                </div>
+                  
+                <div id="Projects" class="tabcontent" style="display:none">
+                    <h2>Projects</h2>
+                    <hr>
+                    <p>Projects info</p>
+                </div>
+                  
+                <div id="Settings" class="tabcontent" style="display:none">
+                    <h2>Settings</h2>
+                    <hr>
+                    <p>Settings info</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <script src="../js/sidebar.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>

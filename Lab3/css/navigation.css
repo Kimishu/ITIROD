@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+
+.nav-bar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(30, 30, 30, 85%);
+}
+
+.nav-bar ul li{
+  float: left;
+}
+
+.nav-bar ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav-bar ul li a img{
+  width: 30px;
+  height: 30px;
+}
+
+.nav-bar ul li#form_element{
+  float: right;
+}
+
+.nav-bar ul li#form_element:hover{
+  background-color: black;
+}
+
+.side-nav {
+  height: 100%; 
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: rgba(30, 30, 30, 85%);
+  overflow-x: hidden;
+  padding-top: 20px; 
+  transition: 0.5s;
+}
+
+.side-nav hr{
+  width: 90%;
+  border-color: #818181;
+}
+  
+/* The navigation menu links */
+.side-nav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.side-nav a:hover {
+  color: #f1f1f1;
+  background-color: black;
+}

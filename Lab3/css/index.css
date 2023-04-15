@@ -1,81 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+@import url(../css/navigation.css);
 
 body{
   background-image: url(../imgs/main.jpg);
   margin: 0px;
-  background-position:top center;
+  background-position: top center;
   background-size:cover;
   font-family: 'JetBrains Mono', sans-serif;
   overflow: hidden;
-}
-
-.nav-bar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgba(30, 30, 30, 85%);
-}
-
-.nav-bar li{
-  float: left;
-}
-
-.nav-bar li a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  width: 62px;
-  height: 62px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-img{
-  width: 30px;
-  height: 30px;
-}
-
-.nav-bar li#form_element{
-  float: right;
-  /* margin-right: 1.5rem; */
-}
-
-.nav-bar li#form_element:hover{
-  background-color: black;
-}
-
-/* The side navigation menu */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  left: 0;
-  background-color: rgba(30, 30, 30, 85%);
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-  
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 8px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  text-align: center;
-}
-  
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-  background-color: black;
 }
     
 .invisible-container {
@@ -92,8 +23,7 @@ img{
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   transition: 0.5s;
-  /* position: absolute; */
-  bottom: 1.5rem;
+  margin-top: 10rem;
 }
 
 .invisible-container img {
@@ -102,10 +32,16 @@ img{
   transition: 0.5s;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 400px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .invisible-container ul {font-size: 18px;}
+  .side-nav {padding-top: 15px;}
+  .side-nav a {font-size: 18px;}
+  .invisible-container ul {font-size: 18px; margin-top: 5rem;}
   .invisible-container img {scale: 0.5;}
+}
+
+@media screen and (max-width: 400px) {
+  .side-nav {padding-top: 15px;}
+  .side-nav a {font-size: 18px;}
+  .invisible-container ul {font-size: 18px;}
+  .invisible-container img {scale: 0.75;}
 }

@@ -9,28 +9,32 @@
 </head>
 <body>
     <header>
-        <ul class="nav-bar">
-            <li onclick="getNav()"><a><img src="../imgs/menu.png"></a></li>
-            <li id="form_element"><a href="signIn.html">SignIn</a></li>
-            <li id="form_element"><a href="signUp.html">SignUp</a></li>
-        </ul>
-        <div id="mySidenav" class="sidenav" style="width: 0px;">
+        <nav class="nav-bar">
+            <ul>
+                <li onclick="getNav()"><a><img src="../imgs/menu.png"></a></li>
+                <li id="form_element"><a href="signIn.html">SignIn</a></li>
+                <li id="form_element"><a href="signUp.html">SignUp</a></li>
+            </ul>
+        </nav>
+        <nav id="side_nav" class="side-nav" style="width: 0px;">
             <a href="index.html">Main</a>
+            <a href="profile.html">Profile</a>
+            <hr>
             <a href="signIn.html">SignIn</a>
             <a href="signUp.html">SignUp</a>
-            <a href="profile.html">Profile</a>
-        </div>
+        </nav>
     </header>
 
-    <div class="invisible-container">
-        <!-- <div class="logo"></div> -->
-        <img src="../imgs/logo.png">
-        <ul>
-            <li>Create your project</li>
-            <li>Add tasks</li>
-            <li>Fight them</li>
-        </ul>
-    </div>
+    <main>
+        <div class="invisible-container">
+            <img src="../imgs/logo.png">
+            <ul>
+                <li>Create your project</li>
+                <li>Add tasks</li>
+                <li>Fight them</li>
+            </ul>
+        </div>
+    </main>
 
     <script src="../js/sidebar.js"></script>
 </body>
