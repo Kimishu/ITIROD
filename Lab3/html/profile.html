@@ -37,11 +37,12 @@
                 <div id="Profile" class="tabcontent">
                     <h2>Profile</h2>
                     <hr>
-                    <div class="avatar__wrapper">
-                        <div class="avatar">
+                    <div class="avatar__wrapper" id="avatar">
+                        <img class="profile-avatar" src="" />
+                        <div class="upload-button">
+
                         </div>
-                        <input class="inputfile" type="file" name="pic" accept="image/*">
-                        <span class="description">Wanna change? Click on it!</span>
+                        <input class="file-upload" type="file" accept="image/*" onchange="loadFile(event)">
                     </div>
 
                     <ul>
@@ -69,5 +70,6 @@
 
     <script src="../js/sidebar.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/avatar.js"></script>
 </body>
 </html>
