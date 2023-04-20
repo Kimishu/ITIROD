@@ -31,7 +31,7 @@
                 <button class="tablinks" onclick="openContent(event,'Profile')">Profile</button>
                 <button class="tablinks" onclick="openContent(event,'Projects')">Projects</button>
                 <button class="tablinks" onclick="openContent(event,'Settings')">Settings</button>
-                <button class="tablinks" onclick="location.href='signIn.html'">Logout</button>
+                <button id="logout" class="tablinks" onclick="location.href='signIn.html'">Logout</button>
             </div>
             <div class="tabcontent__wrapper">
                 <div id="Profile" class="tabcontent">
@@ -41,9 +41,15 @@
                         <div class="avatar">
                         </div>
                         <input class="inputfile" type="file" name="pic" accept="image/*">
+                        <span class="description">Wanna change? Click on it!</span>
                     </div>
-                    <p>Username - Papich</p>
-                    <p>Registration date - 13.04.2023</p>
+
+                    <ul>
+                        <li>Status: User</li>
+                        <li><p>Username: Papich</p></li>
+                        <li><p>Email: vinnitsa-psycho@gmail.com</p></li>
+                        <li><p>Registration Date: 13.04.2023</p></li>
+                    </ul>                    
                 </div>
                   
                 <div id="Projects" class="tabcontent" style="display:none">
