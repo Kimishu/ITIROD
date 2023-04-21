@@ -1,9 +1,15 @@
+var raiseClick = function() {
+  document.getElementById("image_input").click();
+}
 
 
 var loadFile = function(event) {
-    var avatar = document.getElementById('avatar');
-    avatar.style.background = URL.createObjectURL(event.target.files[0]);
-    avatar.onload = function() {
-      URL.revokeObjectURL(avatar.src) // free memory
-    }
+  var reader = new FileReader();
+
+  reader.onload = function(){
+    var output = document.getElementById("avatar-img");
+    output.src = reader.result;
   };
+  reader.readAsDataURL(event.target.files[0]);
+
+};

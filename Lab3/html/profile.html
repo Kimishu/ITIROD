@@ -35,34 +35,79 @@
             </div>
             <div class="tabcontent__wrapper">
                 <div id="Profile" class="tabcontent">
-                    <h2>Profile</h2>
-                    <hr>
-                    <div class="avatar__wrapper" id="avatar">
-                        <img class="profile-avatar" src="" />
-                        <div class="upload-button">
-
+                    <form>
+                        <h2>Profile</h2>
+                        <hr>
+                        <div class="avatar__wrapper" id="avatar">
+                            <img class="profile-avatar" id="avatar-img" src="" onclick="raiseClick()">
+                            <input class="file-upload" id="image_input" onchange="loadFile(event)" type="file" accept="image/*">
+                            <span class="description">Wanna change? Click on it!</span>
                         </div>
-                        <input class="file-upload" type="file" accept="image/*" onchange="loadFile(event)">
-                    </div>
 
-                    <ul>
-                        <li>Status: User</li>
-                        <li><p>Username: Papich</p></li>
-                        <li><p>Email: vinnitsa-psycho@gmail.com</p></li>
-                        <li><p>Registration Date: 13.04.2023</p></li>
-                    </ul>                    
+                        <ul>
+                            <li>Status: User</li>
+                            <li><p>Username: Papich</p></li>
+                            <li><p>Email: vinnitsa-psycho@gmail.com</p></li>
+                            <li><p>Registration Date: 13.04.2023</p></li>
+                        </ul>  
+                        
+                        <input class="tabcontent__button" type="submit" value="Save">
+                    </form>
                 </div>
                   
                 <div id="Projects" class="tabcontent" style="display:none">
                     <h2>Projects</h2>
                     <hr>
-                    <p>Projects info</p>
+                    <div class="projects__wrapper">
+                        <article class="project">
+                            <h3>First project</h3>
+                            <div class="tasks__wrapper">
+                                <article class="task">
+                                    <form>
+                                        <p>Go to shop</p>
+                                    </form>
+                                </article>
+    
+                                <article class="task">
+                                    <form>
+                                        <p>Feed the dog and let it out</p>
+                                    </form>
+                                </article>
+    
+                                <article class="task">
+                                    <form>
+                                        <p>Play new patch in Dota 2</p>
+                                    </form>
+                                </article>
+                            </div>
+                            <button class="add__button"><img src="../imgs/add.png"></button>
+                        </article>
+                        <button class="add__button"><img src="../imgs/add.png"></button>
+                    </div>
                 </div>
                   
                 <div id="Settings" class="tabcontent" style="display:none">
-                    <h2>Settings</h2>
-                    <hr>
-                    <p>Settings info</p>
+                    <form>
+                        <h2>Settings</h2>
+                        <hr>
+                        <h3>User settings</h3>
+                        <div class="user__settings">
+                            <input  type="text" placeholder="New username" name="uname" required>
+                            <input class="tabcontent__field" type="password" placeholder="New password" password="upassword">
+                            <input class="tabcontent__field" type="password" placeholder="Confirm new password" password="upassword">
+                        </div>
+                        <hr>
+                        <h3>Page settings</h3>
+                        <div class="page__settings">
+                            <p>Enable light mode</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <hr>
+                        <input class="tabcontent__button" type="submit" value="Save">
+                    </form>
                 </div>
             </div>
         </div>

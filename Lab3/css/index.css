@@ -18,7 +18,7 @@ body{
 }
 
 .invisible-container ul{
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -27,9 +27,14 @@ body{
 }
 
 .invisible-container img {
-  width: 500px;
-  height: 300px;
+  width: 31.25rem;
+  height: 18.75rem;
   transition: 0.5s;
+}
+
+.invisible-container p {
+  color: white;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-height: 400px) {
@@ -42,6 +47,7 @@ body{
 @media screen and (max-width: 400px) {
   .side-nav {padding-top: 15px;}
   .side-nav a {font-size: 18px;}
-  .invisible-container ul {font-size: 18px;}
+  .invisible-container ul {font-size: 18px; margin-top: 2rem;}
   .invisible-container img {scale: 0.75;}
+  .invisible-container p {font-size: 0.75rem; text-align: center;}
 }
