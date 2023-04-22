@@ -20,7 +20,7 @@ main{
   margin-top: 10rem;
 }
 
-.tab__wrapper{
+.tab-wrapper{
   width: 700px;
   height: 500px;
   border-radius: 35px;
@@ -107,18 +107,18 @@ main{
   margin: 0;
 }
 
-.avatar__wrapper{
+.tabcontent__avatar-wrapper{
   display: flex;
   justify-content: left;
   align-items: center;
   margin-top: 5px;
 }
 
-.file-upload {
+.tabcontent__file-upload {
   display: none;
 }
 
-.profile-avatar{
+.tabcontent__profile-avatar{
   background-color: white;
   width: 100px;
   height: 100px;
@@ -128,7 +128,7 @@ main{
   margin-right: 1rem;
 }
 
-.description{
+.tabcontent__description{
   font-style: italic;
 }
 
@@ -147,7 +147,7 @@ main{
   margin-left: 35%;
 }
 
-.user__settings{
+.tabcontent__user-settings{
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -155,7 +155,7 @@ main{
   margin-bottom: 1rem;
 }
 
-.user__settings input{
+.tabcontent__user-settings input{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   width: 40%;
@@ -172,16 +172,16 @@ main{
   color: white;
 }
 
-.page__settings{
+.tabcontent__page-settings{
   display: flex;
   justify-content: left;
   align-items: center;
 }
-.page__settings p{
+.tabcontent__page-settings p{
   width: 50%;
 }
 
-.projects__wrapper{
+.tabcontent__projects-wrapper{
   margin-top: 1rem;
   display: flex;
   justify-content: center;
@@ -203,7 +203,7 @@ main{
   margin-left: 0.5rem;
 }
 
-.tasks__wrapper{
+.tabcontent__tasks-wrapper{
   width: 100%;
   float: left;
 }
@@ -217,7 +217,7 @@ main{
   margin-bottom: 0.5rem;
 }
 
-.add__button{
+.tabcontent__add-button{
   background: none;
   width: 40px;
   height: 40px;
@@ -230,7 +230,7 @@ main{
   margin-bottom: 1rem;
 }
 
-.add__button img{
+.tabcontent__add-button img{
   width: 30px;
   height: 30px;
 }
@@ -246,13 +246,13 @@ main{
   .side-nav a {font-size: 18px;}
   body{ background-image: url("../imgs/projects_main.jpg");}
   main{margin-top: 4rem;}
-  .tab__wrapper {height: 21rem;}
+  .tab-wrapper {height: 21rem;}
   .tab button{ font-size: 0.5rem;}
   .tabcontent { font-size: 0.5rem;}
-  .profile-avatar {width: 50px; height: 50px;}
+  .tabcontent__profile-avatar {width: 50px; height: 50px;}
   .tabcontent__button {width: 2.5rem; height: 1rem; font-size: 0.5rem;}
-  .user__settings input {width: 9rem; height: 1rem; font-size: 0.5rem;}
-  .add__button {width: 20px; height: 20px;}
-  .add__button img{width: 15px; height: 15px;}
+  .tabcontent__user-settings input {width: 9rem; height: 1rem; font-size: 0.5rem;}
+  .tabcontent__add-button {width: 20px; height: 20px;}
+  .tabcontent__add-button img{width: 15px; height: 15px;}
   .switch {scale: 0.5;}
 }

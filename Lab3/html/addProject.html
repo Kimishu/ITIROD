@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/addProject.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Creation</title>
 </head>
 <body>
+
     <header>
         <nav class="nav-bar">
             <ul>
@@ -24,19 +25,18 @@
             <a href="signUp.html">SignUp</a>
         </nav>
     </header>
-
     <main>
         <div class="invisible-container">
-            <img src="../imgs/logo.png">
-            <ul>
-                <li>Create your project</li>
-                <li>Add tasks</li>
-                <li>Fight them</li>
-            </ul>
-            <p>Each project - your own fight! Start fight them now!</p>
+            <form action="post">
+                <div class="container">
+                    <input class="field" type="text" placeholder="Title" name="project_name" required>
+                    <input class="field" type="text" placeholder="Description" password="project_description" required>
+                    <input type="submit" value="Create">
+                </div>
+            </form>
         </div>
     </main>
-
     <script src="../js/sidebar.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>
