@@ -11,7 +11,7 @@
     <header>
         <nav class="nav-bar">
             <ul>
-                <li onclick="getNav()"><a><img src="../imgs/menu.png"></a></li>
+                <li id="side-menu-button" onclick="getNav()"><a><img src="../imgs/menu.png"></a></li>
                 <li id="form_element"><a href="signIn.html">SignIn</a></li>
                 <li id="form_element"><a href="signUp.html">SignUp</a></li>
             </ul>
@@ -45,7 +45,7 @@
                         </div>
 
                         <ul>
-                            <li>Status: User</li>
+                            <li><p>Status: User</p></li>
                             <li><p>Username: Papich</p></li>
                             <li><p>Email: vinnitsa-psycho@gmail.com</p></li>
                             <li><p>Registration Date: 13.04.2023</p></li>
@@ -80,9 +80,23 @@
                                     </form>
                                 </article>
                             </div>
-                            <button class="tabcontent__add-button"><img src="../imgs/add.png"></button>
+                            <button class="tabcontent__add-button">&plus;</button>
                         </article>
-                        <button class="tabcontent__add-button" onclick="location.href='addProject.html'"><img src="../imgs/add.png"></button>
+                        <button class="tabcontent__add-button" onclick="location.href='addProject.html'">&plus;</button>
+                        <!-- <button id="myBtn"></button> -->
+                        <!-- <div id="myModal" class="modal">
+                            
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <form action="post">
+                                    <div class="container">
+                                        <input class="field" type="text" placeholder="Title" name="project_name" required>
+                                        <input class="field" type="text" placeholder="Description" password="project_description" required>
+                                        <input type="submit" value="Create">
+                                    </div>
+                                </form>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
                   
@@ -116,5 +130,6 @@
     <script src="../js/sidebar.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/avatar.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 </html>

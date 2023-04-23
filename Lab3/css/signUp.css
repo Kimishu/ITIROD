@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.container {
+.invisible-container__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ body{
     padding: 2rem;
 }
 
-.container input {
+.invisible-container__container input {
     background-color: rgba(31, 30, 30, 80%);
     margin-top: 1rem;
     border-radius: 35px;
@@ -33,19 +33,19 @@ body{
     color: white;
 }
 
-.container input[type=submit]{
+.invisible-container__container input[type=submit]{
     width: 185px;
     height: 45px;
     background-color: rgba(31, 30, 30, 90%);
 }
 
-.container input[type=submit]:hover{
+.invisible-container__container input[type=submit]:hover{
     color: rgb(207, 2, 2);
     cursor: pointer;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.container label, a{
+.invisible-container__container label, a{
     font-family: 'JetBrains Mono', sans-serif;
     margin-top: 1rem;
     font-size: 17px;
@@ -54,11 +54,11 @@ body{
     color: white;
 }
 
-.container label a{
+.invisible-container__container label a{
     color: darkorange;
 }
 
-.container label a:hover{
+.invisible-container__container label a:hover{
     color: rgb(207, 2, 2);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }

@@ -1,0 +1,75 @@
+/* The Modal (background) */
+.modal {
+    align-items: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 4rem;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    
+    background-color: rgba(30, 30, 30, 85%) Black w/ opacity
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: rgba(30, 30, 30, 85%);;
+    color: black;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    border-radius: 35px;
+    width: 40rem; /* Could be more or less, depending on screen size */
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container input {
+    background-color: rgba(31, 30, 30, 80%);
+    margin-top: 1rem;
+    border-radius: 35px;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    font-size: 20px;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: bold;
+    padding-left: 15px;
+    color: white;
+}
+
+.container input[type=submit]{
+    
+    width: 185px;
+    height: 45px;
+    background-color: rgba(31, 30, 30, 90%);
+    margin-bottom: 1rem;
+}
+
+.container input[type=submit]:hover{
+    color: rgb(207, 2, 2);
+    cursor: pointer;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+  
+  /* The Close Button */
+  .close {
+    color: darkred;
+    float: right;
+    font-size: 28px;
+    padding-right: 1rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }

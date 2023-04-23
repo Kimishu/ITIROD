@@ -1,11 +1,3 @@
-// function openContent(contentName) {
-//     var x = document.getElementsByClassName("content");
-//     for (var i = 0; i < x.length; i++) {
-//       x[i].style.display = "none";
-//     }
-//     document.getElementById(contentName).style.display = "block";
-// }
-
 function openContent(evt, contentName) {
     // Declare all variables
     var tabcontent, tablinks;
