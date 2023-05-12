@@ -1,18 +1,20 @@
 @import url(../css/navigation.css);
 @import url(../css/slider.css);
-@import url(../css/modal.css);
 
 * {box-sizing: border-box}
 
 body{
   margin: 0px;
-  background: url(../imgs/profile.jpg);
+  background: url("../imgs/profile.jpg") no-repeat;
   background-position: top center;
   background-size:cover;
   font-family: 'JetBrains Mono', sans-serif;
   overflow: hidden;
 }
 
+.main-container {
+  overflow: hidden;
+}
 
 main{
   display: flex;
@@ -75,6 +77,13 @@ main{
 
 .tab button.active {
   background-color: rgba(58, 57, 57, 100%);
+}
+
+.tab button img {
+  position: absolute;
+  visibility: hidden; 
+  width: 30px;
+  height: 30px;
 }
 
 .tabcontent {
@@ -146,13 +155,18 @@ main{
   font-weight: bold;
   margin-top: 1.5rem;
   margin-left: 35%;
+  cursor: pointer;
+}
+
+.tabcontent__button:hover{
+  color: darkred;
 }
 
 .tabcontent__user-settings{
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -245,18 +259,23 @@ main{
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .side-nav {padding-top: 15px;}
   .side-nav a {font-size: 18px;}
-  body{ background-image: url("../imgs/projects_main.jpg");}
+  body{ background: url("../imgs/profile_mobile.jpg"); background-repeat: no-repeat; background-size:cover; background-position: top center; overflow-y: hidden;}
   main{margin-top: 4rem;}
-  .tab-wrapper {height: 21rem;}
-  .tab button{ font-size: 0.5rem;}
-  .tabcontent { font-size: 0.5rem;}
+  .tab { width: 20%;}
+  .tab-wrapper {height: 70%;}
+  .tab button{ font-size: 0.5rem; font-size: 0rem;}
+  .tab button img{visibility: visible; position: static;}
+  .tabcontent { font-size: 1rem;}
+  .tabcontent ul { padding-left: 10%;}
+  .tabcontent__description{ font-size: 0rem; position: absolute; }
+  .tabcontent__avatar-wrapper {justify-content: center;}
   .tabcontent__profile-avatar {width: 50px; height: 50px;}
-  .tabcontent__button {width: 2.5rem; height: 1rem; font-size: 0.5rem;}
-  .tabcontent__user-settings input {width: 9rem; height: 1rem; font-size: 0.5rem;}
-  .tabcontent__add-button {width: 30px; height: 30px; font-size: 0.5rem;}
+  .tabcontent__button {margin-left: 25%; float: none;}
+  .tabcontent__page-settings p{ padding-right: 10px;}
+  .tabcontent__user-settings input {width: 15rem; height: 2rem; font-size: 1rem;}
+  .tabcontent__add-button {width: 30px; height: 30px; font-size: 1rem;}
   .tabcontent__add-button img{width: 15px; height: 15px;}
-  .switch {scale: 0.5;}
 }

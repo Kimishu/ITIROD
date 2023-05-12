@@ -8,17 +8,38 @@
     <title>Start now!</title>
 </head>
 <body>
-    <div class="invisible-container">
-        <form action="post">
-            <div class="invisible-container__container">
-                <input type="text" placeholder="Username" required>
-                <input type="text" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Confirm password" required>
-                <input type="submit" value="Sign Up">
-                <label>Already have an account? <a href="signIn.html">Sign in!</a></label>
-            </div>
-        </form>
-    </div>
+
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li id="side-menu-button" onclick="getNav()"><a><img src="../imgs/menu.png"></a></li>
+                <li id="form_element"><a href="signIn.html">SignIn</a></li>
+                <li id="form_element"><a href="signUp.html">SignUp</a></li>
+            </ul>
+        </nav>
+        <nav id="side_nav" class="side-nav" style="width: 0px;">
+            <a href="index.html">Main</a>
+            <a href="profile.html">Profile</a>
+            <hr>
+            <a href="signIn.html">SignIn</a>
+            <a href="signUp.html">SignUp</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="invisible-container">
+            <form action="post">
+                <div class="invisible-container__container">
+                    <input type="text" placeholder="Username" required>
+                    <input type="text" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm password" required>
+                    <input type="submit" value="Sign Up">
+                    <label>Already have an account? <a href="signIn.html">Sign in!</a></label>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../js/sidebar.js"></script>
 </body>
 </html>

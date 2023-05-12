@@ -25,13 +25,13 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-container">
         <div class="tab-wrapper">
             <div class="tab">
-                <button class="tab__tablinks" onclick="openContent(event,'Profile')">Profile</button>
-                <button class="tab__tablinks" onclick="openContent(event,'Projects')">Projects</button>
-                <button class="tab__tablinks" onclick="openContent(event,'Settings')">Settings</button>
-                <button id="logout" class="tab__tablinks" onclick="location.href='signIn.html'">Logout</button>
+                <button class="tab__tablinks active" onclick="openContent(event,'Profile')"><img src="../imgs/profile.png">Profile</button>
+                <button class="tab__tablinks" onclick="openContent(event,'Projects')"><img src="../imgs/projects.png">Projects</button>
+                <button class="tab__tablinks" onclick="openContent(event,'Settings')"><img src="../imgs/settings.png">Settings</button>
+                <button id="logout" class="tab__tablinks" onclick="location.href='signIn.html'"><img src="../imgs/logout.png">Logout</button>
             </div>
             <div class="tabcontent-wrapper">
                 <div id="Profile" class="tabcontent">
@@ -130,6 +130,5 @@
     <script src="../js/sidebar.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/avatar.js"></script>
-    <script src="../js/modal.js"></script>
 </body>
 </html>

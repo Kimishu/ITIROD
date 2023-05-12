@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
-
+@import url(../css/navigation.css);
 body{
     background-image: url(../imgs/register.jpg);
+    background-position: top center;
+    background-size:cover;
     margin: 0px;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.main-container {
+    overflow: hidden;
 }
 
 .invisible-container {
@@ -45,7 +53,7 @@ body{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.invisible-container__container label, a{
+.invisible-container__container label, .invisible-container__container label a{
     font-family: 'JetBrains Mono', sans-serif;
     margin-top: 1rem;
     font-size: 17px;
@@ -68,7 +76,8 @@ body{
     .side-nav a {font-size: 18px;}
 }
   
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .side-nav {padding-top: 15px;}
     .side-nav a {font-size: 18px;}
+    body {background: url(../imgs/register_mobile.jpg); background-repeat: no-repeat; background-size:cover;}
 }

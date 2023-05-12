@@ -8,6 +8,10 @@ body{
   font-family: 'JetBrains Mono', sans-serif;
   overflow: hidden;
 }
+
+.main-container {
+  overflow: hidden;
+}
     
 .invisible-container {
   height: 100vh;
@@ -38,13 +42,16 @@ body{
 }
 
 @media screen and (max-height: 400px) {
+  body{background: url(../imgs/main_mobile.jpg); overflow-y: hidden;}
   .side-nav {padding-top: 15px;}
   .side-nav a {font-size: 18px;}
-  .invisible-container ul {font-size: 18px; margin-top: 5rem;}
-  .invisible-container img {scale: 0.5;}
+  .invisible-container ul {font-size: 18px; margin-top: 2rem;}
+  .invisible-container img {scale: 0.75;}
+  .invisible-container p {font-size: 0.75rem; text-align: center;}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+  body{background: url(../imgs/main_mobile.jpg); background-repeat: no-repeat; background-size:cover; background-position: top center; overflow-y: hidden;}
   .side-nav {padding-top: 15px;}
   .side-nav a {font-size: 18px;}
   .invisible-container ul {font-size: 18px; margin-top: 2rem;}
