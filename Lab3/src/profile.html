@@ -12,16 +12,13 @@
         <nav class="nav-bar">
             <ul>
                 <li id="side-menu-button" onclick="getNav()"><a><img src="../imgs/menu.png"></a></li>
-                <li id="form_element"><a href="signIn.html">SignIn</a></li>
-                <li id="form_element"><a href="signUp.html">SignUp</a></li>
+                <li class="form_element"><a href="signIn.html">SignIn</a></li>
+                <li class="form_element"><a href="signUp.html">SignUp</a></li>
             </ul>
         </nav>
         <nav id="side_nav" class="side-nav" style="width: 0px;">
             <a href="index.html">Main</a>
-            <a href="profile.html">Profile</a>
-            <hr>
-            <a href="signIn.html">SignIn</a>
-            <a href="signUp.html">SignUp</a>
+            <hr id="hr_elem"> 
         </nav>
     </header>
 
@@ -31,7 +28,7 @@
                 <button class="tab__tablinks active" onclick="openContent(event,'Profile')"><img src="../imgs/profile.png">Profile</button>
                 <button class="tab__tablinks" onclick="openContent(event,'Projects')"><img src="../imgs/projects.png">Projects</button>
                 <button class="tab__tablinks" onclick="openContent(event,'Settings')"><img src="../imgs/settings.png">Settings</button>
-                <button id="logout" class="tab__tablinks" onclick="location.href='signIn.html'"><img src="../imgs/logout.png">Logout</button>
+                <button id="logout" class="tab__tablinks"><img src="../imgs/logout.png">Logout</button>
             </div>
             <div class="tabcontent-wrapper">
                 <div id="Profile" class="tabcontent">
@@ -44,60 +41,41 @@
                             <span class="tabcontent__description">Wanna change? Click on it!</span>
                         </div>
 
-                        <ul>
-                            <li><p>Status: User</p></li>
-                            <li><p>Username: Papich</p></li>
-                            <li><p>Email: vinnitsa-psycho@gmail.com</p></li>
-                            <li><p>Registration Date: 13.04.2023</p></li>
+                        <ul id="user_info">
+                            <li><p>Status: </p></li>
+                            <li><p>Username: </p></li>
+                            <li><p>Email: </p></li>
+                            <li><p>Registration Date: </p></li>
                         </ul>  
                         
-                        <input class="tabcontent__button" type="submit" value="Save">
+                        <button class="tabcontent__button" id="submitAvatar" type="button">Save</button>
                     </form>
                 </div>
                   
                 <div id="Projects" class="tabcontent" style="display:none">
                     <h2>Projects</h2>
                     <hr>
-                    <div class="tabcontent__projects-wrapper">
-                        <article class="project">
-                            <h3>First project</h3>
-                            <div class="tabcontent__tasks-wrapper">
-                                <article class="task">
-                                    <form>
-                                        <p>Go to shop</p>
-                                    </form>
-                                </article>
-    
-                                <article class="task">
-                                    <form>
-                                        <p>Feed the dog and let it out</p>
-                                    </form>
-                                </article>
-    
-                                <article class="task">
-                                    <form>
-                                        <p>Play new patch in Dota 2</p>
-                                    </form>
-                                </article>
-                            </div>
-                            <button class="tabcontent__add-button">&plus;</button>
-                        </article>
-                        <button class="tabcontent__add-button" onclick="location.href='addProject.html'">&plus;</button>
-                        <!-- <button id="myBtn"></button> -->
-                        <!-- <div id="myModal" class="modal">
-                            
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <form action="post">
-                                    <div class="container">
-                                        <input class="field" type="text" placeholder="Title" name="project_name" required>
-                                        <input class="field" type="text" placeholder="Description" password="project_description" required>
-                                        <input type="submit" value="Create">
-                                    </div>
-                                </form>
-                            </div>
-                        </div> -->
+                    <div class="tabcontent-container">
+                        <div class="tabcontent__projects-wrapper">
+                            <!-- Here will be generated projects and tasks! -->
+                            <button class="tabcontent__add-button" onclick="location.href='addProject.html'" id="add_project">&plus;</button>
+                        </div>
                     </div>
+
+                    <!-- Here is modal! -->
+                    <!-- <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form action="post">
+                                <div class="container">
+                                    <input class="field" type="text" placeholder="Title" name="project_name" required>
+                                    <input class="field" type="text" placeholder="Description" password="project_description" required>
+                                    <input type="submit" value="Create">
+                                </div>
+                            </form>
+                        </div>
+                    </div> -->
+
                 </div>
                   
                 <div id="Settings" class="tabcontent" style="display:none">
@@ -106,11 +84,11 @@
                         <hr>
                         <h3>User settings</h3>
                         <div class="tabcontent__user-settings">
-                            <input  type="text" placeholder="New username" name="uname" required>
-                            <input class="tabcontent__field" type="password" placeholder="New password" password="upassword">
-                            <input class="tabcontent__field" type="password" placeholder="Confirm new password" password="upassword">
+                            <input  type="text" placeholder="New username" name="uname" id="new_username" required>
+                            <input class="tabcontent__field" type="password" placeholder="New password" id="new_password" password="upassword">
+                            <input class="tabcontent__field" type="password" placeholder="Confirm new password" id="new_password_confirm" password="upassword">
                         </div>
-                        <hr>
+                        <!-- <hr>
                         <h3>Page settings</h3>
                         <div class="tabcontent__page-settings">
                             <p>Enable light mode</p>
@@ -119,8 +97,8 @@
                                 <span class="slider round"></span>
                             </label>
                         </div>
-                        <hr>
-                        <input class="tabcontent__button" type="submit" value="Save">
+                        <hr> -->
+                        <button class="tabcontent__button" id="submitSettings" type="button">Save</button>
                     </form>
                 </div>
             </div>
@@ -130,5 +108,7 @@
     <script src="../js/sidebar.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/avatar.js"></script>
+    <script type="module" src="../js/profile.js"></script>
+    <!-- <script src="../js/modal.js"></script> -->
 </body>
 </html>

@@ -10,7 +10,13 @@
 }
 
 .nav-bar ul li{
+  float: right;
+  visibility: hidden;
+}
+
+.nav-bar ul li:first-child{
   float: left;
+  visibility: visible;
 }
 
 .nav-bar ul li a{
@@ -31,11 +37,7 @@
   height: 30px;
 }
 
-.nav-bar ul li#form_element{
-  float: right;
-}
-
-.nav-bar ul li#form_element:hover{
+.form_element:hover{
   background-color: black;
 }
 

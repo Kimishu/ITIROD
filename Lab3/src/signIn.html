@@ -13,31 +13,29 @@
         <nav class="nav-bar">
             <ul>
                 <li id="side-menu-button" onclick="getNav()"><a><img src="../imgs/menu.png"></a></li>
-                <li id="form_element"><a href="signIn.html">SignIn</a></li>
-                <li id="form_element"><a href="signUp.html">SignUp</a></li>
+                <li class="form_element"><a href="signIn.html">SignIn</a></li>
+                <li class="form_element"><a href="signUp.html">SignUp</a></li>
             </ul>
         </nav>
         <nav id="side_nav" class="side-nav" style="width: 0px;">
             <a href="index.html">Main</a>
-            <a href="profile.html">Profile</a>
-            <hr>
-            <a href="signIn.html">SignIn</a>
-            <a href="signUp.html">SignUp</a>
+            <hr id="hr_elem">
         </nav>
     </header>
 
     <main class="main-container">
         <div class="invisible-container">
-            <form action="post">
+            <form>
                 <div class="invisible-container__container">
-                    <input class="field" type="text" placeholder="Username" name="uname" required>
-                    <input class="field" type="password" placeholder="Password" password="upassword" required>
-                    <input type="submit" value="Sign In">
+                    <input class="field" type="text" placeholder="Email" name="uname" id="email" required>
+                    <input class="field" type="password" placeholder="Password" password="upassword" id="password" required>
+                    <button id="submitData" type="button">Login</button>
                     <label>Don't have an account? <a href="signUp.html">Register!</a></label>
                 </div>
             </form>
         </div>
     </main>
     <script src="../js/sidebar.js"></script>
+    <script type="module" src="../js/signIn.js"></script>
 </body>
 </html>

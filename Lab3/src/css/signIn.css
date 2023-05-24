@@ -28,7 +28,7 @@ body{
     padding: 2rem;
 }
 
-.invisible-container__container input {
+.invisible-container__container input, button {
     background-color: rgba(31, 30, 30, 80%);
     margin-top: 1rem;
     border-radius: 35px;
@@ -42,14 +42,13 @@ body{
     color: white;
 }
 
-.invisible-container__container input[type=submit]{
-    
+.invisible-container__container button{
     width: 185px;
     height: 45px;
     background-color: rgba(31, 30, 30, 90%);
 }
 
-.invisible-container__container input[type=submit]:hover{
+.invisible-container__container button:hover{
     color: rgb(207, 2, 2);
     cursor: pointer;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;

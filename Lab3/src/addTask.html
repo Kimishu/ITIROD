@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/addProject.css">
+    <link rel="stylesheet" href="../css/addTask.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creation</title>
+    <title>Task</title>
 </head>
 <body>
-
     <header>
         <nav class="nav-bar">
             <ul>
@@ -22,19 +21,20 @@
             <hr id="hr_elem">
         </nav>
     </header>
+
     <main class="main-container">
         <div class="invisible-container">
-            <form>
+            <form action="post">
                 <div class="invisible-container__container">
-                    <input class="field" type="text" placeholder="Title" id="project_title" required>
-                    <input class="field" type="text" placeholder="Description" id="project_description">
-                    <button id="submitData" type="button">Create</button>
+                    <input class="field" type="text" placeholder="Task name" id="task_title" required>
+                    <!-- <input type="submit" value="Create"> -->
+                    <button class="fade-button" id="submitData" type="button">Create</button>
                 </div>
             </form>
         </div>
     </main>
+
     <script src="../js/sidebar.js"></script>
-    <script src="../js/menu.js"></script>
-    <script type="module" src="../js/addProject.js"></script>
+    <script type="module" src="../js/addTask.js"></script>
 </body>
 </html>
